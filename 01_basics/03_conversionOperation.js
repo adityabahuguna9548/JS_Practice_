@@ -25,3 +25,7 @@ let someNumber = 33;
 let stringNumber =  String(someNumber);
 console.log(stringNumber,typeof stringNumber);
 
+//******************Operations ******** */
+let str1= "Hello";
+let str2 = "Aditya";
+console.log(str1+ str2);
