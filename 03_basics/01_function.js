@@ -45,3 +45,42 @@ function loginUserMessage(username){
     return`${username} just logged in`;
 }
 console.log(loginUserMessage("aditya")); // without give any agrument give :- undefined
+
+
+
+//  rest operator use in function 
+
+function calculaetCartPrice(val1, val2,...num1){
+    return num1;
+}
+
+console.log(calculaetCartPrice(200,222,2,3444,5543,222));
+
+// object access in the function
+
+const user = {
+    name:"Hitesh",
+    price:999
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.name} and Price is ${anyobject.price} . `);
+}
+handleObject(user);
+
+// secound method to access object from function
+handleObject({   
+    name:"Sam",
+    price:899
+})
+
+// array access in the function
+
+const newaArr = [200,3000,4000,100,500,600];
+function returnValueArray(getArray){
+    console.log(`Array is :- ${getArray}. `);
+    return getArray[3];
+}
+returnValueArray(newaArr);
+console.log("Value is from array:-",returnValueArray(newaArr));
+returnValueArray([200,3000,4000,100,500,600]); // 2nd method array access 
